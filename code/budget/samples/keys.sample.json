@@ -1,0 +1,5 @@
+[
+  {"id": "k1", "name": "orders-dashboard-prod-ai", "cost_limit": "10.00", "spent": "9.20", "reserved": "0.30", "remaining": "0.50", "resets_at": "2026-11-10T00:00:00Z"},
+  {"id": "k2", "name": "orders-dashboard-dev-ai", "cost_limit": "2.00", "spent": "0.10", "reserved": "0", "remaining": "1.90", "resets_at": "2026-11-10T00:00:00Z"},
+  {"id": "k3", "name": "sandbox-ai", "cost_limit": "0", "spent": "0", "reserved": "0", "remaining": "0"}
+]

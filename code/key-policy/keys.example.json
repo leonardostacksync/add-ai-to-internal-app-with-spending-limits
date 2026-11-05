@@ -1,0 +1,8 @@
+[
+  {"name": "orders-dashboard-prod-ai", "app": "orders-dashboard", "environment": "prod", "owner": "ops-lead@example.com",
+   "purpose": "Summaries and answers inside the orders dashboard", "limit_usd": 25, "every": 1, "unit": "weeks", "last_rotated": "2026-09-15"},
+  {"name": "orders-dashboard-dev-ai", "app": "orders-dashboard", "environment": "dev", "owner": "ops-lead@example.com",
+   "purpose": "Development and tests", "limit_usd": 2, "every": 1, "unit": "weeks", "last_rotated": "2026-10-01"},
+  {"name": "close-tracker-prod-ai", "app": "close-tracker", "environment": "prod", "owner": "finance-lead@example.com",
+   "purpose": "Explains variances in the month-end close tracker", "limit_usd": 10, "every": 1, "unit": "months", "last_rotated": "2026-08-20"}
+]

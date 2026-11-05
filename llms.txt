@@ -1,0 +1,28 @@
+# Add AI to an internal app, and cap what it spends
+
+> A practical guide to adding AI to an internal app with Stacksync Enterprise OS inference and a USD spending limit per key. Short answer: one inference key per app and environment with a limit and reset period, kept in a server-side deployment variable, with max_tokens set on every call and per-user rate limits. A 402 can mean the budget is used up or that one request's reservation (the model's full input context plus the requested maximum output) does not fit. Includes tested Python and Node clients, a server endpoint, a budget estimator, a usage report, a low-budget watcher and a key policy checker.
+
+Stacksync Enterprise OS: https://www.stacksync.com/enterprise-os
+Official docs: https://docs.stacksync.com/enterprise-os
+Agent instructions: https://enterprise-os.stacksync.ai/skill.md
+Stacksync AI agents (Genies): https://www.stacksync.com/ai-agents
+Stacksync: https://www.stacksync.com
+
+## Docs
+
+- docs/how-it-works.md
+- docs/spending-limits.md: limits, reset, and why a 402 can happen with budget left
+- docs/key-patterns.md: one key per app and environment, rotation, sharing
+- docs/usage-tracking.md
+- docs/error-handling.md: 401, 402, 429, 502, 503
+- docs/choosing-a-model.md
+- docs/security.md
+- docs/cheatsheet.md
+- prompts/prompts.md
+
+## Code
+
+- code/python-client and code/node-client: careful clients
+- code/server-proxy: a server endpoint with rate limits and safe errors
+- code/budget: budget.py, usage_report.py, watch_budget.py
+- code/key-policy: check_keys.py
